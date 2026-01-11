@@ -42,7 +42,14 @@ const Contact = () => {
                 .from('leads')
                 .insert([formData]);
 
-            if (error) throw error;
+            if (error) {
+                // Ignore missing keys error as it's just a backup
+                if (error.message === 'Supabase keys missing') {
+                    console.warn('Supabase backup skipped: keys missing');
+                } else {
+                    throw error;
+                }
+            }
 
             setStatus('success');
             setFormData({ name: '', email: '', message: '' });
