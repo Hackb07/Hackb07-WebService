@@ -28,7 +28,7 @@ Hackb07 is a premium digital agency dashboard specializing in High-Performance W
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/hackb07.git
+git clone https://github.com/Hackb07/Hackb07-WebService.git
 cd hackb07
 ```
 
