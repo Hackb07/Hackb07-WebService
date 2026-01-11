@@ -40,6 +40,7 @@ create policy "Anyone can insert leads"
   with check ( true );
 
 -- Seed Data (Expanded List)
+
 insert into services (title, description, category, min_price, icon) values
 ('Full Stack Web App', 'End-to-end web application using MERN Stack or Next.js with secure authentication and database.', 'Web Dev', 250, 'Layers'),
 ('E-commerce Solutions', 'Custom online stores with payment gateway integration, inventory, and admin dashboard.', 'Web Dev', 300, 'ShoppingBag'),
